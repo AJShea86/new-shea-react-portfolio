@@ -6,7 +6,7 @@ import Education from './components/Education';
 import Background from './components/Background';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
-import Form from './components/Form';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <Background/>
       <Contact/>
       <Portfolio/>
-      <Form/>
+      <Footer/>
 
 
 
