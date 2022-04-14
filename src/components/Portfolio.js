@@ -7,7 +7,7 @@ const Portfolio = ()=>{
         <h3  className="card-title">Portfolio</h3>
         <div >
           <div className="card" >
-            {/* <img className="card-img-top" src="./Images/weather-app-screenshot.png" alt="Card image cap"> */}
+            <img src={require('../images/weather-app-screenshot.png')} alt="Card image cap"></img>
             <div className="card-body">
               <h5 className="card-title">Weather Dashboard</h5>
               <p className="card-text">Search the weather by city with this app that uses the Open Weather API.</p>
@@ -19,6 +19,8 @@ const Portfolio = ()=>{
           </div>
           <div className="card" >
             {/* <img className="card-img-top" src="./Images/new-dayplanner-screenshot.png" alt="Card image cap"> */}
+            <img src={require('../images/new-dayplanner-screenshot.png')} alt="Card image cap"></img>
+
             <div className="card-body">
               <h5 className="card-title">Day Planner</h5>
               <p className="card-text">Easily create and view tasks with this simple day planner application.</p>
@@ -30,6 +32,8 @@ const Portfolio = ()=>{
           </div>
           <div className="card" >
             {/* <img className="card-img-top" src="./Images/stumble-screenshot.png" alt="Card image cap"> */}
+            <img src={require('../images/stumble-screenshot.png')} alt="Card image cap"></img>
+
             <div className="card-body">
               <h5 className="card-title">Stumble Upon the Force!</h5>
               <p className="card-text">Generate random Star Wars trivia facts and movie quotes with this application using SWAPI and the Star Wars Qoutes API.</p>
@@ -41,6 +45,8 @@ const Portfolio = ()=>{
           </div>
           <div className="card" >
             {/* <img className="card-img-top" src="./Images/CRM-unitID.png" alt="Card image cap"> */}
+            <img src={require('../images/CRM-unitID.png')} alt="Card image cap"></img>
+
             <div className="card-body">
               <h5 className="card-title">Storage Customer Relations Manager</h5>
               <p className="card-text">This is a customer relations manager for a storage unit company designed to track customers, units, and employees.</p>
@@ -52,6 +58,8 @@ const Portfolio = ()=>{
           </div>
           <div className="card" >
             {/* <img className="card-img-top" src="./Images/note-taker-screenshot.png" alt="Card image cap"> */}
+            <img src={require('../images/note-taker-screenshot.png')} alt="Card image cap"></img>
+
             <div className="card-body">
               <h5 className="card-title">Note Taker</h5>
               <p className="card-text">Create and save notes easily with this note taker application that uses node.js and express.js</p>

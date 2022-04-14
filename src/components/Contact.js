@@ -9,6 +9,8 @@ const Contact = ()=>{
           <div  className="card-body">
             <h3  className="card-title">Contact Me</h3>
           </div>
+          <img src={require('../images/headshot2.jpeg')} alt="Card image cap"></img>
+
           <div className="card-body" >
             <a type="button" className="btn btn-outline-dark" href = "mailto: andrewsheamls@gmail.com">Email Me</a>            
             <a type="button" className="btn btn-outline-dark" href="https://www.linkedin.com/in/aj-shea-155155228" >Visit my LinkedIn</a>
