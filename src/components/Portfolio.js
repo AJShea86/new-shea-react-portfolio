@@ -71,6 +71,8 @@ const Portfolio = ()=>{
           </div>
           <div className="card" >
             {/* <img className="card-img-top" src="./Images/README-screenshot.png" alt="Card image cap"> */}
+            <img src={require('../images/README-screenshot.png')} alt="Card image cap"></img>
+
             <div className="card-body">
               <h5 className="card-title">FeedME a ReadME</h5>
               <p className="card-text">Generate a readME file using this command line application created with the Inquirer npm.</p>
