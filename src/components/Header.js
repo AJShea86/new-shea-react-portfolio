@@ -22,6 +22,8 @@ const Header = ()=>{
           <a className="nav-link" href="#portfolio">Portfolio</a>
         </li>
       </ul>
+      <a type="button"   className="btn btn-outline-dark" href="Shea-Resume (10).pdf" download >Download Resume</a>
+
     </div> 
   </nav>)
 }
