@@ -1,38 +1,29 @@
-.App {
+.name {
+  background-image: url("https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto");
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+}
+
+.beard-pic {
+  border-radius: 50px;
+  padding: 10px;
+  height: 250px;
+  width: 265px;
+}
+
+
+
+.card {
+  margin: 20px;
   text-align: center;
+  min-height: 250px;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card1{
+    display: flex;
+    justify-content: center;
 }
