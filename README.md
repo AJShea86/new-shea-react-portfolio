@@ -8,3 +8,4 @@ Description:
 
 This is a personal portfolio I created using React. 
 
+![Screenshot 2022-04-14 220612](https://user-images.githubusercontent.com/97988155/163516933-659f7329-8bbb-4366-845e-3a056cfeadc5.png)
