@@ -1,8 +1,17 @@
 import React from 'react';
 
 const Header = (props)=>{
+  console.log(props.active)
 
-    return  (<nav className="navbar navbar-expand-lg navbar-light nav " >
+
+
+  const educationStyle = {
+    color:props.active === "Education"? "red" : null
+  
+  }
+
+
+    return  (<nav className="fixed-top navbar navbar-expand-lg navbar-light nav " >
     <a className="navbar-brand"  href="#contactme">AJ Shea</a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -10,7 +19,7 @@ const Header = (props)=>{
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link" onClick={()=>props.changeLink('Education')} href="#education">Education</a>
+          <a style={educationStyle} className="nav-link" onClick={()=>props.changeLink('Education')} href="#education">Education</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" onClick={()=>props.changeLink('Background')} href="#background">Background</a>

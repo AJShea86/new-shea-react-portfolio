@@ -20,9 +20,11 @@ function App() {
 
   }
 
+
+
   return (
     <div className="App">
-      <Header changeLink={changeLink}/>
+      <Header changeLink={changeLink} active={activeLink}/>
       <Jumbotron/>
 
       {activeLink === 'Education'? <Education/> : null}
