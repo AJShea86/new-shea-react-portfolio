@@ -10,7 +10,7 @@
 .card {
   margin: 20px;
   text-align: center;
-  min-height: 250px;
+  /* min-height: 250px; */
   color: black;
   /* display: flex;
   justify-content: center;

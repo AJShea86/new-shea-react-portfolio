@@ -19,7 +19,7 @@ const Portfolio = ()=>{
           </div>
           <div className="card" >
             {/* <img className="card-img-top" src="./Images/new-dayplanner-screenshot.png" alt="Card image cap"> */}
-            <img src={require('../images/new-dayplanner-screenshot.png')} alt="Card image cap"></img>
+            <img style={{width: "600px", display: "flex", justifyContent: "center" }} src={require('../images/new-dayplanner-screenshot.png')} alt="Card image cap"></img>
 
             <div className="card-body">
               <h5 className="card-title">Day Planner</h5>
