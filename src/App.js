@@ -7,16 +7,29 @@ import Background from './components/Background';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import React, {useState} from 'react';
+
 
 function App() {
+
+  const [activeLink, setActiveLink] = useState('Background')
+
+  const changeLink = link => {
+    setActiveLink(link)
+
+
+  }
+
   return (
     <div className="App">
-      <Header/>
+      <Header changeLink={changeLink}/>
       <Jumbotron/>
-      <Education/>
-      <Background/>
-      <Contact/>
-      <Portfolio/>
+
+      {activeLink === 'Education'? <Education/> : null}
+      {activeLink === 'Background'? <Background/> : null}
+      {activeLink === 'Contact'? <Contact/> : null}
+      {activeLink === 'Portfolio'? <Portfolio/> : null}
+
       <Footer/>
 
 
