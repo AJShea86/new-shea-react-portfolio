@@ -6,6 +6,18 @@ const Portfolio = ()=>{
         <section className="card" id="portfolio" >
         <h3  className="card-title">Portfolio</h3>
         <div >
+        <div className="card" >
+            <img src={require('../images/Fetch-screenshot.png')} alt="Card image cap"></img>
+            <div className="card-body">
+              <h5 className="card-title">Fetch!</h5>
+              <p className="card-text">Make new puppy pals with Fetch. Search through profiles to make matches with other local users.</p>
+            </div>
+            <div className="card-body">
+              <a type="button" className="btn btn-outline-dark card-link" href="https://github.com/AJShea86/Project-3-DU" >View the Repo</a>
+              <a type="button" className="btn btn-outline-dark card-link" href="https://fetchdu.herokuapp.com/" >Launch</a>
+            </div>
+          </div>
+
           <div className="card" >
             <img src={require('../images/weather-app-screenshot.png')} alt="Card image cap"></img>
             <div className="card-body">
