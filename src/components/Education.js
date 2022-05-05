@@ -1,11 +1,16 @@
 import React from 'react';
 
-const Education = ()=>{
+const Education = (props)=>{
+  const container = {
+    backgroundColor: !props.darkMode ? "white" : "black",
+    color: !props.darkMode ? "black" : "white"
+   }
+
 
     return (
-        <section id="education">
-        <div className="card" >
-          <div className="card-body" >
+        <section style={container} id="education">
+        <div style={container} className="card" >
+          <div style={container} className="card-body" >
             <h3 className="card-title">Education</h3>
             <p className="card-text" ></p>
             <h5>Bachelor of Science in Biological Sciences</h5>

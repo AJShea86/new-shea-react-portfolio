@@ -33,6 +33,8 @@ const themes = {
 function App() {
   const [activeLink, setActiveLink] = useState("Background");
   const [theme, setTheme] = useState("light");
+  const [darkMode, setDarkMode] = useState(false)
+  const toggleDarkmode = () => setDarkMode(previous => !previous)
 
 
   const changeLink = (link) => {
@@ -41,14 +43,14 @@ function App() {
 
   return (
     <div className="App">
-      <Header changeLink={changeLink} active={activeLink} />
+      <Header changeLink={changeLink} active={activeLink} toggle={toggleDarkmode}/>
       <ThemeProvider theme={themes[theme]}>
       <Splash theme={theme} setTheme={setTheme} />
     </ThemeProvider>
 
       <Jumbotron />
 
-      {activeLink === "Education" ? <Education /> : null}
+      {activeLink === "Education" ? <Education darkMode = {darkMode} /> : null}
       {activeLink === "Background" ? <Background /> : null}
       {activeLink === "Contact" ? <Contact /> : null}
       {activeLink === "Portfolio" ? <Portfolio /> : null}

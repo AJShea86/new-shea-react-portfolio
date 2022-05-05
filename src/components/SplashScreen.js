@@ -55,15 +55,9 @@ function Splash(props) {
     const icon = props.theme === "light" ? <HiMoon size={40} /> : <CgSun size={40} />;
 
     return (
-        <Page>
-            <Container>
                 <Toggle onClick={changeTheme}>
                     {icon}
                 </Toggle>
-                {/* <Title>Dark Mode Demo</Title>
-                <TagLine>Blah blah blah blah blah</TagLine> */}
-            </Container>
-        </Page>
     );
 };
 
