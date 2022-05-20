@@ -46,10 +46,10 @@ const Header = (props)=>{
           <a style={portfolioStyle} className="nav-link" onClick={()=>props.changeLink('Portfolio')} href="#portfolio">Portfolio</a>
         </li>
       </ul>
-      <a type="button"   className="btn btn-outline-dark" href="Shea-Resume (10).pdf" download >Download Resume</a>
-      <button onClick={()=>props.toggle()}>
+      <a type="button"   className="btn btn-outline-dark" href="Shea Resume - Web.pdf" download >Download Resume</a>
+      {/* <button onClick={()=>props.toggle()}>
         Toggle
-      </button>
+      </button> */}
 
     </div> 
   </nav>)

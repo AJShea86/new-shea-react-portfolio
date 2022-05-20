@@ -7,7 +7,7 @@ const Portfolio = ()=>{
         <h3  className="card-title">Portfolio</h3>
         <div >
         <div className="card" >
-            <img src={require('../images/Fetch-screenshot.png')} alt="Card image cap"></img>
+            <img src={require('../images/Screenshot-fetch.png')} alt="Card image cap"></img>
             <div className="card-body">
               <h5 className="card-title">Fetch!</h5>
               <p className="card-text">Make new puppy pals with Fetch. Search through profiles to make matches with other local users.</p>
