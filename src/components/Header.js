@@ -47,9 +47,9 @@ const Header = (props)=>{
         </li>
       </ul>
       <a type="button"   className="btn btn-outline-dark" href="Shea Resume - Web.pdf" download >Download Resume</a>
-      {/* <button onClick={()=>props.toggle()}>
+      <button onClick={()=>props.toggle()}>
         Toggle
-      </button> */}
+      </button>
 
     </div> 
   </nav>)

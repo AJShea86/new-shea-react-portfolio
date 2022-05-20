@@ -1,9 +1,14 @@
 import React from 'react';
 
 
-const Portfolio = ()=>{
+const Portfolio = (props)=>{
+  const container = {
+    backgroundColor: !props.darkMode ? "white" : "black",
+    color: !props.darkMode ? "black" : "white"
+   }
+
     return(
-        <section className="card" id="portfolio" >
+        <section style={container} className="card" id="portfolio" >
         <h3  className="card-title">Portfolio</h3>
         <div >
         <div className="card" >

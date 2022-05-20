@@ -1,9 +1,13 @@
 import React from 'react';
 
 
-const Background = ()=>{
+const Background = (props)=>{
+  const container = {
+    backgroundColor: !props.darkMode ? "white" : "black",
+    color: !props.darkMode ? "black" : "white"
+   }
     return(
-        <section className="card" id="background">
+        <section style={container} className="card" id="background">
         <div  >
           <div className="card-body">
             <h3 className="card-title">Background</h3>

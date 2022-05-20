@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 
 
-const Contact = () => {
+const Contact = (props) => {
+
+
+
 
 
 
@@ -35,23 +38,28 @@ const Contact = () => {
     setMessage(event.target.value)
   }
 
+  const container = {
+    backgroundColor: !props.darkMode ? "white" : "black",
+    color: !props.darkMode ? "black" : "white"
+   }
+
 
 
 
   return (
-    <section className="card1" >
-      <div id="contactme" className="card" >
+    <section style={container} className="card1" >
+      <div  id="contactme" className="card" >
         <div className="card-img-top" src="./Images/headshot2.jpeg" alt="Card image cap">  </div>
-        <div className="card-body">
-          <h3 className="card-title">Contact Me</h3>
+        <div  className="card-body">
+          <h3  className="card-title">Contact Me</h3>
         </div>
         <img style={{ width: "300px" }} src={require('../images/headshot2.jpeg')} alt="Card image cap"></img>
 
-        <form className="card id">
-          <div className="col card-body">
+        <form  className="card id">
+          <div  className="col card-body">
             <input onChange={handleChangeName} value={name} type="text" className="form-control " placeholder="Name"></input>
           </div>
-          <div className="form-group card-body">
+          <div  className="form-group card-body">
             <label for="exampleFormControlInput1">Email Address</label>
             <input
               onChange={handleChangeEmail}
@@ -62,7 +70,7 @@ const Contact = () => {
               placeholder="name@example.com"
             ></input>
           </div>
-          <div className="form-group card-body">
+          <div  className="form-group card-body">
             <label for="exampleFormControlTextarea1">Leave a Message</label>
             <textarea
               onChange={handleMessages}

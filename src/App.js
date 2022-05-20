@@ -51,9 +51,9 @@ function App() {
       <Jumbotron />
 
       {activeLink === "Education" ? <Education darkMode = {darkMode} /> : null}
-      {activeLink === "Background" ? <Background /> : null}
-      {activeLink === "Contact" ? <Contact /> : null}
-      {activeLink === "Portfolio" ? <Portfolio /> : null}
+      {activeLink === "Background" ? <Background darkMode = {darkMode}/> : null}
+      {activeLink === "Contact" ? <Contact darkMode = {darkMode} /> : null}
+      {activeLink === "Portfolio" ? <Portfolio darkMode = {darkMode}/> : null}
 
       <Footer />
     </div>
